@@ -43,11 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Ishape.cs" />
+    <Compile Include="ImplementationByUserA .cs" />
+    <Compile Include="IsignupPageForClient.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Rectangle.cs" />
-    <Compile Include="Square.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using InterfaceDemo;
+
 namespace InterfaceDemo
 {
-    class Square:Ishape
+    interface IsignupPageForClient
     {
-        public void PrintShape()
-        {
-            Console.WriteLine("square");
-        }
+        bool PasswordVerificationLogic(string password);
+        bool IsUsernameAvailable(string username);
     }
 }

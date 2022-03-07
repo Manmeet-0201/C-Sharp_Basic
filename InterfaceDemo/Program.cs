@@ -10,11 +10,19 @@ namespace InterfaceDemo
     {
         static void Main(string[] args)
         {
-            Ishape Rectangleshape = new Rectangle();
-            Ishape SquareShape = new Square();
-            Rectangleshape.PrintShape();
-            SquareShape.PrintShape();
-            Console.ReadKey();
+            ImplementationByUserA SignupPageImplementation = new ImplementationByUserA();
+            bool UsernameVerification = SignupPageImplementation.IsUsernameAvailable("arjun123");
+            bool passwordVerification = SignupPageImplementation.IsUsernameAvailable("123545");//
+            
+
+            if (UsernameVerification && passwordVerification)
+            {
+                //User is redirected to home page
+            }
+            else
+            {
+                //User is not allowed to move to the home page
+            }
         }
     }
 }
