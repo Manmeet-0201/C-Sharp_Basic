@@ -6,25 +6,88 @@ using System.Threading.Tasks;
 
 namespace MethodOverLoading
 {
-    class Program
+    class NetflixWebsite
     {
+        //The payment option on any E-commerce website has options like net banking, COD, Debit card etc.
+        //Which means the payment method is overloaded several times to perform payment function in various ways.
+
+        private static void PaymentProcessing()
+        {
+            Console.WriteLine("Oder Placed. Please pay the cash to the delivery executive. Thank you");
+        }
+        private static void PaymentProcessing(string Username, string password)
+        {
+            //Credentials are checked and processed
+            Console.WriteLine("Payment processing going on through Net Banking...");
+        }
+
+        private static void PaymentProcessing(string NameOnCard, string UserDebitCardNumber, string UserDebitCardCVV)
+        {
+            //Credentials are checked and processed
+            Console.WriteLine("Payment processing going on through debit card...");
+        }
+
         static void Main(string[] args)
         {
-            Console.WriteLine(Add(1, 2));
-            Console.WriteLine(Add(1, 2, 3));
-            Console.WriteLine(Add(2, 9.0f));
+            NetflixWebsite.DisplayPaymentOptions();
+
+            Console.WriteLine("Please choose the payment option to proceed : ");
+            int UserSelectedOption = int.Parse(Console.ReadLine());
+
+            while (UserSelectedOption < 1 || UserSelectedOption > 3)
+            {
+                Console.WriteLine("Invalid Option selected. Please choose a valid option");
+                UserSelectedOption = int.Parse(Console.ReadLine());
+            }
+
+            switch (UserSelectedOption)
+            {
+                case 1:
+                    {
+                        InvokeProcessingDirect();
+                        break;
+                    }
+                case 2:
+                    {
+                        InvokeProcessingThroughNetBanking();
+                        break;
+                    }
+                case 3:
+                    {
+                        InvokeProcessingThroughDebitCard();
+                        break;
+                    }
+            }
         }
-        static int Add(int a,int b)
+
+        private static void DisplayPaymentOptions()
         {
-            return a + b;
+            Console.WriteLine("Choose 1 for payment using Cash on Delivery \nChoose 2 for payment using Net Banking \nChoose 3 for payment using Debit card\n\n");
         }
-        static int Add(int a,int b,int c)
+        private static void InvokeProcessingDirect()
         {
-            return a + b + c;
+            PaymentProcessing();
         }
-        static float Add(int a,float b)
+        private static void InvokeProcessingThroughNetBanking()
         {
-            return a + b;
+            Console.WriteLine("Please provide your username");
+            string UsernameOfUser = Console.ReadLine();
+            Console.Write("Please provide your password");
+            string PasswordOfUser = Console.ReadLine();
+
+            PaymentProcessing(UsernameOfUser, PasswordOfUser);
+        }
+
+        private static void InvokeProcessingThroughDebitCard()
+        {
+            Console.WriteLine("Please enter the name on card");
+            string NameOnCard = Console.ReadLine();
+            Console.WriteLine("Please provide your DebitCard Number");
+            string DebitCardNumber = Console.ReadLine();
+            Console.WriteLine("Please provide your CVV");
+            string CVVNumberOfDebitCard = Console.ReadLine();
+
+            PaymentProcessing(NameOnCard, DebitCardNumber, CVVNumberOfDebitCard);
         }
     }
 }
