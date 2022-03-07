@@ -10,24 +10,50 @@ namespace ArraysDemo
     {
         static void Main(string[] args)
         {
-            int[] array = new int[5];
-            Console.WriteLine("Enter any Five numbers");
-            for(int i = 0; i < 5; i++)
+            Customer[] customers = new Customer[5];
+            CreateGroupOfCustomers(customers);
+            foreach(Customer customer in customers)
             {
-                array[i] = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine(customer);
             }
-            Console.WriteLine(AddAllNumbersInArray(array));
             Console.ReadKey();
         }
-        static int AddAllNumbersInArray(int[] array)
+        private static void CreateGroupOfCustomers(Customer[] GroupOfCustomers)
         {
-            int sum = 0;
-            foreach(int numbers in array)
+            GroupOfCustomers[0] = new Customer()
             {
-                sum = sum + numbers;
-            }
-            return sum;
+                ID = 101,
+                Name = "Steve",
+                salary = 3000
+            };
 
+            GroupOfCustomers[1] = new Customer()
+            {
+                ID = 102,
+                Name = "John",
+                salary = 4500
+            };
+
+            GroupOfCustomers[2] = new Customer()
+            {
+                ID = 103,
+                Name = "Jane",
+                salary = 4000
+            };
+
+            GroupOfCustomers[3] = new Customer()
+            {
+                ID = 104,
+                Name = "Alice",
+                salary = 7000
+            };
+
+            GroupOfCustomers[4] = new Customer()
+            {
+                ID = 105,
+                Name = "Bob",
+                salary = 5500
+            };
         }
     }
 }
