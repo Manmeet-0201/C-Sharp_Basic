@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PartialClasses", "PartialCl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortingUsingComparer", "SortingUsingComparer\SortingUsingComparer.csproj", "{2E83C316-B676-4F0E-8FE6-CEFFCC0035DF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NamespacesDemo", "NamespacesDemo\NamespacesDemo.csproj", "{865B36A2-1B5C-40C6-BA6A-42E2EC9029AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +131,10 @@ Global
 		{2E83C316-B676-4F0E-8FE6-CEFFCC0035DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E83C316-B676-4F0E-8FE6-CEFFCC0035DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E83C316-B676-4F0E-8FE6-CEFFCC0035DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{865B36A2-1B5C-40C6-BA6A-42E2EC9029AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{865B36A2-1B5C-40C6-BA6A-42E2EC9029AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{865B36A2-1B5C-40C6-BA6A-42E2EC9029AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{865B36A2-1B5C-40C6-BA6A-42E2EC9029AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
