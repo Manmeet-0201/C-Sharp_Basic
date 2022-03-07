@@ -3,27 +3,36 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.IO;
 namespace ExceptionDemo
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int Operand1 = Convert.ToInt32(Console.ReadLine());
-            int Operand2 = Convert.ToInt32(Console.ReadLine());
+            StreamReader DataFromFile = null;
             try
             {
-                float Quotient = Operand1 / Operand2;
+                DataFromFile = new StreamReader(@"C:\Rainbow\Data.txt");
+                Console.WriteLine(DataFromFile.ReadToEnd());
+
             }
-            catch (DivideByZeroException dve)
+            catch (FileNotFoundException exception)
             {
-                Console.WriteLine(dve.Message);
+                //Log the details to DB
+                Console.WriteLine("Please check if the file {0} exists", exception.FileName);
+            }
+            catch (Exception exception)
+            {
+                Console.WriteLine(exception.Message);
             }
             finally
             {
-                Console.WriteLine("In finally");
-                Console.ReadKey();
+                if (DataFromFile != null)
+                {
+                    DataFromFile.Close();
+                }
+                Console.WriteLine("Finally block executed");
             }
         }
     }
