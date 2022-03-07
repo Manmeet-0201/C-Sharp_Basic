@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortingComplexTypes", "Sort
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodHidingDemo", "MethodHidingDemo\MethodHidingDemo.csproj", "{28F319DE-6B57-40B1-889D-FE0B6509F998}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InheritanceDemo", "InheritanceDemo\InheritanceDemo.csproj", "{BB9F14C8-D80D-45D5-8C75-B8C3673E6966}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{28F319DE-6B57-40B1-889D-FE0B6509F998}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28F319DE-6B57-40B1-889D-FE0B6509F998}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28F319DE-6B57-40B1-889D-FE0B6509F998}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB9F14C8-D80D-45D5-8C75-B8C3673E6966}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB9F14C8-D80D-45D5-8C75-B8C3673E6966}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB9F14C8-D80D-45D5-8C75-B8C3673E6966}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB9F14C8-D80D-45D5-8C75-B8C3673E6966}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
