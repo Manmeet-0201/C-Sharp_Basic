@@ -8,16 +8,8 @@ namespace DictionaryDemo
 {
     class Customer
     {
-        string Name;
-        int ID;
-        public Customer(string Name,int ID)
-        {
-            this.Name = Name;
-            this.ID = ID;
-        }
-        public override string ToString()
-        {
-            return Name + "-" + ID;
-        }
+        public int ID { set; get; }
+        public string Name { set; get; }
+        public int salary { set; get; }
     }
 }
