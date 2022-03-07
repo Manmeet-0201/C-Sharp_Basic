@@ -8,14 +8,14 @@ namespace MethodOverRidingDemo
 {
     class FullTimeEmployee:Employee
     {
-        float salary;
+        float Anualsalary;
         public FullTimeEmployee(int ID, string Name, float salary) : base(Name, ID)
         {
-            this.salary = salary;
+            this.Anualsalary = salary;
         }
         public override float ComputeSalary()
         {
-            return salary;
+            return Anualsalary/12;
         }
     }
 }
