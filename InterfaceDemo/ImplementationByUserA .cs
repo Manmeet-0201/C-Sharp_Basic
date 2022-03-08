@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InterfaceDemo
 {
-    class ImplementationByUserA
+    class ImplementationByUserA:IsignupPageForClient
     {
         public bool IsUsernameAvailable(string Username)
         {

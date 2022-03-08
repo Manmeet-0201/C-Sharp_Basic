@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using AbstractClassesDemo;
 namespace AbstractClassesDemo
 {
-    class PartTImeEmployee:Employee
+    class PartTImeEmployee:AbstractEmployee
     {
         float DailyWage;
         int NumberOfDays;

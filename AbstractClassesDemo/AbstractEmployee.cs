@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace AbstractClassesDemo
 {
-    abstract class Employee
+    abstract class AbstractEmployee
     {
         string Name;
         int ID;
-        public Employee(string Name,int ID)
+        public AbstractEmployee(string Name,int ID)
         {
             this.Name = Name;
             this.ID = ID;
