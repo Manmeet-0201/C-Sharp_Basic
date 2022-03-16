@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LinkedInClassDemo
 {
-    class ScienceExperiment:IScored
+    public class ScienceExperiment:IScored
     {
         public string Hypothesis { get; set; }
         public string Materials { get; set; }

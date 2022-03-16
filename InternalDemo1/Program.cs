@@ -13,7 +13,7 @@ namespace InternalDemo1
             Class1 Class1Object = new Class1();
             //Class1.x;
             //Above statement gives us error
-            Console.WriteLine(new Program().y);
+            Console.WriteLine(new Program()._y);
         }
     }
 }

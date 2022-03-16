@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using LinkedInClassDemo;
+using System.Runtime;
 namespace SchoolFormsApp
 {
     public partial class Form1 : Form
@@ -44,6 +45,15 @@ namespace SchoolFormsApp
             try
             {
                 testSchool.TwitterAddress = txtTwitter.Text;
+                EnglishPaper englishAssignment = new LinkedInClassDemo.EnglishPaper();
+                englishAssignment.Score = 80;
+                englishAssignment.MaximumScore = 100;
+                ScienceExperiment scienceAssignment = new LinkedInClassDemo.ScienceExperiment();
+                scienceAssignment.Score = 90;
+                scienceAssignment.MaximumScore = 100;
+                IScored bestOFTwo = LinkedInClassDemo.ScoreUtility.BestOfTwo(englishAssignment, scienceAssignment);
+                //MessageBox.Show(bestOFTwo is EnglishPaper?"The English paper got highest mark":"The Science paper got highest mark");
+
             }
             catch(Exception ex)
             {
