@@ -46,7 +46,7 @@
     <Compile Include="Iphone.cs" />
     <Compile Include="MobilePhone.cs" />
     <Compile Include="Oneplus.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="InheritanceDemoExecutor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

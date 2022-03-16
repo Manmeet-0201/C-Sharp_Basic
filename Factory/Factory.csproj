@@ -46,7 +46,7 @@
     <Compile Include="EmailUserNotifier.cs" />
     <Compile Include="IUserNotifier.cs" />
     <Compile Include="NotificationServiceProvider.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="FactoryExecutor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ShippingService.cs" />
     <Compile Include="TestUserNotifier.cs" />

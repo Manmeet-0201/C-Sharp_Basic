@@ -45,7 +45,7 @@
   <ItemGroup>
     <Compile Include="ImplementationByUserA .cs" />
     <Compile Include="IsignupPageForClient.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="InterfaceDemoExecutor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

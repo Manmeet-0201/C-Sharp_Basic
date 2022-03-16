@@ -55,7 +55,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtectedAccessDemo", "Prot
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InternalDemo", "InternalDemo\InternalDemo.csproj", "{A3622CF5-2241-4068-BB1A-5C976F6D56CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InternalDemo1", "InternalDemo1\InternalDemo1.csproj", "{9467DC34-7E8A-40B8-8A6B-E343C7390953}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InternalDemoAccess", "InternalDemo1\InternalDemoAccess.csproj", "{9467DC34-7E8A-40B8-8A6B-E343C7390953}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExplicitInterfaceImplementation", "ExplicitInterfaceImplementation\ExplicitInterfaceImplementation.csproj", "{C22B7BF6-1C4C-4AEC-BE66-34DCEC3DFEB0}"
 EndProject

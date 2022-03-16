@@ -46,7 +46,7 @@
     <Compile Include="DaysInMonthCollection.cs" />
     <Compile Include="DaysInMonthEnumerator.cs" />
     <Compile Include="MonthWithDays.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="IteratorExecutor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
