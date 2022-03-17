@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{955C7C69-8C7A-47D3-A4A4-20F36E304011}</ProjectGuid>
+    <ProjectGuid>{F16C4724-CE96-4AAA-9856-9AD61A370AE7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SalaryCalculatorTestProject</RootNamespace>
-    <AssemblyName>SalaryCalculatorTestProject</AssemblyName>
+    <RootNamespace>PolymorphismTestProject</RootNamespace>
+    <AssemblyName>PolymorphismTestProject</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -49,16 +49,16 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CalculatorTest.cs" />
+    <Compile Include="EmployeeTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Calculator\Calculator.csproj">
-      <Project>{9d0c5d6d-7bf0-4ca2-b346-5bac67b10f96}</Project>
-      <Name>Calculator</Name>
+    <ProjectReference Include="..\Polymorphism\Polymorphism.csproj">
+      <Project>{21e6677b-347a-4db5-9cb5-cdb2efb97153}</Project>
+      <Name>Polymorphism</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
