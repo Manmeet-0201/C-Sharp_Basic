@@ -4,7 +4,7 @@ using Calculator;
 namespace SalaryCalculatorTestProject
 {
     [TestClass]
-    public class CalculatorTest
+    public class SalaryCalculatorTest
     {
         [TestMethod]
         public void TestAnnualSalary()
